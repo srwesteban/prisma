@@ -13,10 +13,10 @@ const router= Router();
 /**
  * Importando metodos
  */
-const { usuariosGet, usuariosPost, usuariosPut } = require('../controllers/usuarios.controller');
+const { MostrarUsuarios, AgregarUsuario, usuariosPut } = require('../controllers/usuarios.controller');
 
-router.get('/', usuariosGet);
-router.post('/',usuariosPost);
+router.get('/', MostrarUsuarios);
+router.post('/',AgregarUsuario);
 router.put('/',usuariosPut);
 
 
