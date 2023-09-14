@@ -20,8 +20,15 @@ const usuariosPut = (req=request, res=response)=>{
     res.send('Hola UCC')
 }
 
+const usuariosDelete = (req = request, res = response) => {
+    res.json({
+        msg: 'Eliminar usuario - Método DELETE'
+    });
+}
+
 module.exports = {
     usuariosGet,
     usuariosPost,
-    usuariosPut
+    usuariosPut,
+    usuariosDelete
 }
